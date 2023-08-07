@@ -5,7 +5,7 @@
   font-family: "Gilroy-Medium", sans-serif;
 }
 body {
-  padding-top: 114px;
+  padding-top: 132px;
 }
 :root {
   --main-color: #fa541c;
@@ -290,11 +290,12 @@ nav .custom-icon-container {
   height: 480px;
   object-fit: cover;
 }
-.banner .banners {
+.banner .site-3 .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  margin-left: 50px;
 }
 .banner .site-3 .banner-content .banner-title {
   font-size: 48px;
