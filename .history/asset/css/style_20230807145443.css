@@ -1,0 +1,7 @@
+.site {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-height: 80px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <!-- import font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .payment {
+        display: flex;
+        align-items: center;
+      }
+
+      .currency-icon {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+
+      .payment-text {
+        margin-right: 10px;
+      }
+
+      .user-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .sign-in-btn,
+      .register-btn {
+        padding: 8px 16px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .sign-in-btn {
+        background-color: #007bff; /* Màu nền cho nút Sign In */
+      }
+
+      .register-btn {
+        background-color: #28a745; /* Màu nền cho nút Register */
+      }
+
+      .usa-flag-icon {
+        font-size: 24px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="payment">
+        <i class="fas fa-dollar-sign currency-icon"></i>
+        <span class="payment-text"
+          >Afterpay, Laybuy & Genoapay | Free Delivery New Zealand +
+          Australia</span
+        >
+      </div>
+      <div class="user-actions">
+        <button class="sign-in-btn">Sign In</button>
+
+        <i class="fas fa-flag-usa usa-flag-icon"></i>
+      </div>
+    </div>
+  </body>
+</html>

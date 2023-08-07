@@ -1,0 +1,8 @@
+.site {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1280px;
+  max-height: 60px;
+  background-color: #fa541c;
+}
