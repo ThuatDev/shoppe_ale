@@ -465,9 +465,7 @@ main {
   background-color: #fff;
   color: var(--main-color);
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid var(--main-color);
+  border-radius: 5px;
   font-size: 16px;
 
   /* Đặt nút ở giữa màn hình */
@@ -486,8 +484,8 @@ main {
 /* Phong cách cho đường line */
 .line {
   width: 555px;
-  height: 1px;
-  background-color: var(--main-color);
+  height: 2px;
+  background-color: #007bff;
 }
 
 /* Phong cách cho đường line bên trái */

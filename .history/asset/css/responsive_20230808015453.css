@@ -129,6 +129,7 @@
     position: absolute;
     bottom: 29px;
     right: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .category-name::after {
     text-align: center;
@@ -139,18 +140,5 @@
     width: 35%;
     height: 1px;
     background-color: black;
-  }
-  /* end fashition  */
-  .line {
-    width: 90%; /* Khi màn hình nhỏ hơn 768px, đặt độ rộng là 90% */
-  }
-
-  .left-line,
-  .right-line {
-    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
-  }
-  /* ẩn ddid 1 line  */
-  .left-line {
-    display: none;
   }
 }

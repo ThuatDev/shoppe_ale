@@ -244,7 +244,7 @@ nav .custom-icon-container {
 
 .banner {
   border-top: 1px solid #e8e8e8;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
   height: 560px;
   width: 100%;
   background-color: #fdf1f1;
@@ -342,160 +342,72 @@ nav .custom-icon-container {
   cursor: pointer;
 }
 
-/* tạo dường line  */
-.category-name {
-  position: relative;
-}
-
-.category-name::after {
-  content: "";
-  position: absolute;
-  bottom: -3px; /* Điều chỉnh vị trí dưới của đường line */
-  left: 0;
-  width: 10%; /* Chiều rộng đường line bằng 50% chiều rộng của chữ */
-  height: 1px;
-  background-color: black; /* Màu sắc của đường line */
-}
-
-.rotate-right {
-  transform: scaleX(-1);
-  display: block;
-  width: 289px;
-  height: 143px;
-  object-fit: cover;
-  position: absolute;
-  /* bottom: 29; */
-  right: 0;
-}
-.fashion-item-img {
-  display: block;
-  width: 289px;
-  height: 143px;
-  object-fit: cover;
-  position: absolute;
-  bottom: 29px;
-  right: 0;
-}
-main {
-  background-color: var(--background);
-}
-.fashion-style {
-  width: var(--width-container);
+/* CSS cho product-by-category section */
+.product-by-category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: var(--width-container);
   margin: 0 auto;
-  padding-top: 40px;
-}
-.fashion-style .category-name {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.32px;
-  color: var(--text-color);
-  margin-bottom: 40px;
 }
 
-.fashion-style .fashions {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  align-items: center;
+/* CSS cho fashion-style container */
+.fashion-style {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-.fashion-style .fashions .fashion-item .fashion-item-title {
-  font-family: Gilroy;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%; /* 40.8px */
-  letter-spacing: 0.24px;
-  padding-bottom: 12px;
-}
-.fashion-style .fashions .fashion-item .fashion-item-left {
-  padding: 25px 150px 50px 50px;
-}
-.fashion-style .fashions .fashion-item {
-  display: flex;
-  flex-direction: column;
+/* CSS cho fashion-item */
+.fashion-item {
   position: relative;
-  width: 544px;
-  height: 270px;
-  background: #ffffff;
-  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.06);
-  margin-bottom: 40px;
-}
-.fashion-style .fashions .fashion-item .fashion-item-title .span {
-  color: #334155;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.24px;
-}
-/* css des  */
-.fashion-style .fashions .fashion-item .fashion-item-desc {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%; /* 27.2px */
-  color: #85858a;
-  padding-bottom: 12px;
-}
-/* css price  */
-.fashion-style .fashions .fashion-item .fasion-item-price {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.24px;
-
-  padding-bottom: 12px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Đặt chung phong cách cho button và đường line */
-.see-more-button,
-.line {
-  display: inline-block;
+/* CSS cho item-image */
+.item-image {
+  width: 100%;
+  height: 200px; /* Điều chỉnh chiều cao hình ảnh tùy ý */
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
-/* Phong cách cho nút See More */
-.see-more-button {
-  padding: 10px 20px;
-  background-color: #fff;
-  color: var(--main-color);
+/* CSS cho xoay hình ảnh sang phải */
+.rotate-right {
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+
+/* CSS cho fashion-item-title */
+.fashion-item-title {
+  margin-bottom: 20px;
+}
+
+/* CSS cho fashion-item-desc */
+.fashion-item-desc {
+  margin-bottom: 15px;
+}
+
+/* CSS cho fasion-item-price */
+.fasion-item-price {
+  margin-bottom: 15px;
+}
+
+/* CSS cho add-to-cart-button */
+.add-to-cart-button {
+  background-color: #fa541c;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid var(--main-color);
-  font-size: 16px;
-
-  /* Đặt nút ở giữa màn hình */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-/* Phong cách cho khung chứa nút và đường line */
-.button-wrapper {
-  position: relative;
-  text-align: center;
-}
-
-/* Phong cách cho đường line */
-.line {
-  width: 555px;
-  height: 1px;
-  background-color: var(--main-color);
-}
-
-/* Phong cách cho đường line bên trái */
-.left-line {
-  margin-right: 155px;
-}
-
-/* Phong cách cho đường line bên phải */
-.right-line {
-  margin-left: 10px;
+/* CSS cho cart-icon */
+.cart-icon {
+  margin-right: 8px;
 }

@@ -147,7 +147,7 @@
 
   .left-line,
   .right-line {
-    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
+    margin: 20px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
   }
   /* ẩn ddid 1 line  */
   .left-line {

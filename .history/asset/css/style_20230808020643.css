@@ -486,7 +486,7 @@ main {
 /* Phong cách cho đường line */
 .line {
   width: 555px;
-  height: 1px;
+  height: 2px;
   background-color: var(--main-color);
 }
 

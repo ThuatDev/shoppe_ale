@@ -134,23 +134,10 @@
     text-align: center;
     content: "";
     position: absolute;
-    bottom: -3px;
-    left: 82px;
-    width: 35%;
+    bottom: -3px; /* Điều chỉnh vị trí dưới của đường line */
+    left: 0;
+    width: 10%; /* Chiều rộng đường line bằng 50% chiều rộng của chữ */
     height: 1px;
-    background-color: black;
-  }
-  /* end fashition  */
-  .line {
-    width: 90%; /* Khi màn hình nhỏ hơn 768px, đặt độ rộng là 90% */
-  }
-
-  .left-line,
-  .right-line {
-    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
-  }
-  /* ẩn ddid 1 line  */
-  .left-line {
-    display: none;
+    background-color: black; /* Màu sắc của đường line */
   }
 }

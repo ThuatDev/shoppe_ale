@@ -462,12 +462,10 @@ main {
 /* Phong cách cho nút See More */
 .see-more-button {
   padding: 10px 20px;
-  background-color: #fff;
-  color: var(--main-color);
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid var(--main-color);
+  border-radius: 5px;
   font-size: 16px;
 
   /* Đặt nút ở giữa màn hình */
@@ -486,8 +484,8 @@ main {
 /* Phong cách cho đường line */
 .line {
   width: 555px;
-  height: 1px;
-  background-color: var(--main-color);
+  height: 2px;
+  background-color: #fff;
 }
 
 /* Phong cách cho đường line bên trái */

@@ -109,48 +109,13 @@
     height: auto;
   }
   .fashion-style {
-    width: 100%;
+ width: 100%;
+  }
   }
   .fashion-style .fashions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .fashion-style .fashions .fashion-item {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .fashion-item-img {
-    max-width: fit-content;
-
-    object-fit: cover;
-    position: absolute;
-    bottom: 29px;
-    right: 0;
-  }
-  .category-name::after {
-    text-align: center;
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 82px;
-    width: 35%;
-    height: 1px;
-    background-color: black;
-  }
-  /* end fashition  */
-  .line {
-    width: 90%; /* Khi màn hình nhỏ hơn 768px, đặt độ rộng là 90% */
-  }
-
-  .left-line,
-  .right-line {
-    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
-  }
-  /* ẩn ddid 1 line  */
-  .left-line {
-    display: none;
   }
 }
