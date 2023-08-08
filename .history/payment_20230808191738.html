@@ -7,7 +7,7 @@
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
     <link rel="stylesheet" href="./asset/css/style.css" />
     <!-- <link rel="stylesheet" href="./asset/css/cart.css" /> -->
-    <link rel="stylesheet" href="./asset/css/orderhistory.css" />
+    <link rel="stylesheet" href="./asset/css/payment.css" />
     <!-- <link rel="stylesheet" href="./asset/css/category.css" /> -->
     <link
       rel="stylesheet"
@@ -20,44 +20,14 @@
     />
     <style>
       @media screen and (max-width: 768px) {
-        footer {
+        .payment-box {
           width: 100%;
+          height: 100%;
         }
-        .container_fluid {
+        .payment-title {
           width: 100%;
-        }
-        .btn_sortPage {
-          width: 100%;
-        }
-        .container_fluid {
-          width: 100%;
-        }
-        .order {
-          width: 100%;
-          margin-top: 62px;
+          height: 100%;
           text-align: center;
-        }
-        .btn_sortPage {
-          margin-left: 0;
-          text-align: center;
-        }
-        .order_history > h3 {
-          text-align: center;
-        }
-        .main_order .order_history {
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 28px;
-          letter-spacing: 0.01em;
-          /* text-align: left; */
-          padding-bottom: 32px;
-          border-bottom: 1px solid #eee;
-        }
-        .footer {
-          margin-top: 40px;
-          padding-top: 24px;
-          background-color: #fff1f0;
-          padding-left: 50px;
         }
       }
     </style>
@@ -308,14 +278,16 @@
             <img src="./asset/image/Logo_-_Good4Me_140x 1.png" alt="" />
           </div>
           <ul class="menu">
-            <li class="menu-item menu-item-active"><a href="#">HOME</a></li>
+            <li class="menu-item menu-item-active">
+              <a href="./index.html">HOME</a>
+            </li>
             <li class="menu-item">
               <a href="./category.html">FASHION STYLE</a>
             </li>
             <li class="menu-item">
               <a href="./orderhistory.html">APPLE WACTH</a>
             </li>
-            <li class="menu-item"><a href="./orderhistory.html">IPHONE</a></li>
+            <li class="menu-item"><a href="./cart.html">IPHONE</a></li>
           </ul>
           <div class="search">
             <div class="icon-search"></div>
@@ -338,147 +310,38 @@
         </div>
       </nav>
     </header>
-    <main class="main_order">
-      <div class="container_fluid">
-        <div class="order">
-          <div class="order_history">
-            <h3>Order History</h3>
+    <div class="line"></div>
+
+    <main>
+      <section class="payment">
+        <div class="payment-box">
+          <div class="payment-logo">
+            <img src="./assets/icons/ticky.png" alt="" />
           </div>
-          <div class="order_boxs">
-            <div class="order_no">
-              <div class="order_no-title">
-                <img src="./assets/images/down.png" alt="" />
-                <span>Order no: #123456789</span>
+          <h1 class="payment-title">Your payment is successfully</h1>
+          <p class="payment-description">Thank you for choosing us.</p>
+          <div class="payment_details">
+            <h3>Payment details</h3>
+            <div class="payment_details-title">
+              <div class="payment_details-order">
+                <span>Order no:</span>
+                <span> #123456789</span>
               </div>
-              <p class="order_desc">Order Date : 2 June 2023 2:40 PM</p>
-            </div>
-            <!-- order list -->
-            <div class="order_list">
-              <div class="order-item">
-                <div class="order-thumb">
-                  <img src="./assets/images/order.jpg" alt="" />
-                  <div class="order_content">
-                    <p class="order_content-heading">Apple Watch Series 7</p>
-                    <p class="order_content-color">Color:<span>Gray</span></p>
-                    <p class="order_content-quantily">
-                      Quantity:<span>1</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="order_price">
-                  <span class="total_price">Total:</span>
-                  <span>$3000</span>
-                </div>
+              <div class="payment_details-order">
+                <span>Oder date: 02/06/2022</span>
+                <span> Oder date: 02/06/2022</span>
               </div>
-              <div class="order-item">
-                <div class="order-thumb">
-                  <img src="./assets/images/order.jpg" alt="" />
-                  <div class="order_content">
-                    <p class="order_content-heading">Apple Watch Series 7</p>
-                    <p class="order_content-color">Color:<span>Gray</span></p>
-                    <p class="order_content-quantily">
-                      Quantity:<span>1</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="order_price">
-                  <span class="total_price">Total:</span>
-                  <span>$3000</span>
-                </div>
-              </div>
-              <div class="order-item">
-                <div class="order-thumb">
-                  <img src="./assets/images/order.jpg" alt="" />
-                  <div class="order_content">
-                    <p class="order_content-heading">Apple Watch Series 7</p>
-                    <p class="order_content-color">Color:<span>Gray</span></p>
-                    <p class="order_content-quantily">
-                      Quantity:<span>1</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="order_price">
-                  <span class="total_price">Total:</span>
-                  <span>$3000</span>
-                </div>
+              <div class="payment_details-order">
+                <span>Total: </span>
+                <span>$3000</span>
               </div>
             </div>
           </div>
-          <div class="order_boxs">
-            <div class="order_no">
-              <div class="order_no-title">
-                <img src="./assets/images/down.png" alt="" />
-                <span>Order no: #123456789</span>
-              </div>
-              <p class="order_desc">Order Date : 2 June 2023 2:40 PM</p>
-            </div>
-            <!-- order list -->
-            <div class="order_list">
-              <div class="order-item">
-                <div class="order-thumb">
-                  <img src="./assets/images/order.jpg" alt="" />
-                  <div class="order_content">
-                    <p class="order_content-heading">Apple Watch Series 7</p>
-                    <p class="order_content-color">Color:<span>Gray</span></p>
-                    <p class="order_content-quantily">
-                      Quantity:<span>1</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="order_price">
-                  <span class="total_price">Total:</span>
-                  <span>$3000</span>
-                </div>
-              </div>
-              <div class="order-item">
-                <div class="order-thumb">
-                  <img src="./assets/images/order.jpg" alt="" />
-                  <div class="order_content">
-                    <p class="order_content-heading">Apple Watch Series 7</p>
-                    <p class="order_content-color">Color:<span>Gray</span></p>
-                    <p class="order_content-quantily">
-                      Quantity:<span>1</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="order_price">
-                  <span class="total_price">Total:</span>
-                  <span>$3000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="order_boxs">
-            <div class="order_no">
-              <div class="order_no-title">
-                <img src="./assets/images/down.png" alt="" />
-                <span>Order no: #123456789</span>
-              </div>
-              <p class="order_desc">Order Date : 2 June 2023 2:40 PM</p>
-            </div>
-            <!-- order list -->
-            <div class="order_list"></div>
+          <div class="payment_backHome">
+            <a href="" class="payment_back">Back to home</a>
           </div>
         </div>
-        <div class="btn_sortPage">
-          <button class="prev">
-            <a href="">
-              <img src="./assets/icons/prev.svg" alt="" />
-            </a>
-          </button>
-          <button><a href="">1</a></button>
-          <button><a href="">2</a></button>
-          <button><a href="">3</a></button>
-          <button><a href="">...</a></button>
-          <button><a href="">9</a></button>
-          <button><a href="">10</a></button>
-          <button class="next">
-            <a href="">
-              <img src="./assets/icons/next.svg" alt="" />
-            </a>
-          </button>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container_fluid">
