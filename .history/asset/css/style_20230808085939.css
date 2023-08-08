@@ -399,7 +399,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
 
-
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -426,7 +426,7 @@ main {
   background: #ffffff;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.06);
   margin-bottom: 40px;
-  margin-right: 32px;
+  margin-right: 96px;
 }
 .fashion-style .fashions .fashion-item .fashion-item-title .span {
   color: #334155;
@@ -647,7 +647,7 @@ background:  #F6FFED;
  filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.06));
  background: #f7f7f7;
 
- padding: 12px 15px;
+ padding: 9px 15px;
  border-radius: 30px;
  /* đỗ bóng cho màu sắc 0 */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -753,9 +753,7 @@ line-height: 170%; /
 .line {
   display: inline-block;
 }
-.site-cover{
-  margin-bottom: 51px;
-}
+
 /* Phong cách cho nút See More */
 .site-cover .see-more-button {
   padding: 10px 20px;
@@ -804,108 +802,3 @@ line-height: 170%; /
   margin-left: 72px;
   width: var(--width-container);
 }
-/* css site ip  */
-.site-iphone .button-wrapper{
-  margin-top: 51px;
-  background-color: var(--background);
-}/* CSS for the footer and its columns */
-.footer {
-  margin-top: 128px;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  flex-wrap: wrap;
-
-  /* border-top: 1px solid #ccc; */
-    background-color: #FFF8F6;
-
-  padding: 20px;
-}
-.footer .footer-column:nth-child(1) {
-
-/* Body/Body2-16px-Regular */
-width: 424.25px;
-margin-right: 40px;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 170%; /* 27.2px */
-
-}
-.footer-column {
-
-  /* padding: 10px; */
-  padding-left: 40px;
-  margin-right: 40px;
-  box-sizing: border-box;
-}
-  .footer .col-2 {
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 170%; /* 27.2px */
-  }
-  .footer .col-3 {
-
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 170%; /* 27.2px */
-  }
-
-.icon {
-  /* Add your icon styles here */
-}
-
-.footer-column p {
-  margin-top: 10px;
-}
-.footer .footer-column .logo-footer{
-display: block;
-
-width: 239.454px;
-height: 48.729px;
-
-
-}
-
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 5px;
-}
-
-/* CSS for the line separating the sections */
-.footer-line {
-  width: 90%;
-  border-top: 1px solid #ccc;
-  margin: 20px auto;
-}
-
-/* CSS for the social icons and the "Powered by" text */
-.footer-social-icons,
-.payment-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer-social-icons i,
-.payment-icons i {
-  /* Add your icon styles here */
-  margin: 0 5px;
-}
-
-/* CSS for the "Powered by" text */
-.powered-by {
-  text-align: center;
-  margin-top: 20px;
-}
-/* css footer  */
-
