@@ -493,7 +493,7 @@ padding: 11px 20px;
 
 /* Phong cách cho đường line */
 .line {
-  width: 599px;
+  width: 555px;
   height: 1px;
   background-color: var(--main-color);
 }
@@ -600,9 +600,6 @@ background:  #F6FFED;
   font-weight: 400;
   line-height: 170%;
   color: #389e0d;
-}
-.site-5 .products {
-  padding-left: 86px;
 }
 .category-apple-watch .site-5 .products .product-item .product-item-title {
   font-size: 24px;
@@ -778,8 +775,8 @@ line-height: 170%; /
 
   /* Đặt nút ở giữa màn hình */
   position: absolute;
-     top: 50%;
-    left: 51%;
+  top: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
 }
 
@@ -840,9 +837,6 @@ line-height: 170%; /
         height: 48.73px;
         margin-left: 10px;
          cursor: pointer;
-      }
-      .logo img {
-        cursor: pointer;
       }
 
       .footer__col:first-child .footer_logo > img {

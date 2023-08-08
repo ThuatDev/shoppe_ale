@@ -110,15 +110,6 @@
   }
   .fashion-style {
     width: 100%;
-    margin: 0 auto;
-  }
-  .fashions {
-  }
-  .fashion-style .fashions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .fashion-style .fashions {
     display: flex;

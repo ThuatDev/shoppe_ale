@@ -113,6 +113,7 @@
     margin: 0 auto;
   }
   .fashions {
+    margin-left: 200px;
   }
   .fashion-style .fashions {
     display: flex;

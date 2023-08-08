@@ -841,9 +841,6 @@ line-height: 170%; /
         margin-left: 10px;
          cursor: pointer;
       }
-      .logo img {
-        cursor: pointer;
-      }
 
       .footer__col:first-child .footer_logo > img {
         width: 100%;
