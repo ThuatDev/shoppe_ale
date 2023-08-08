@@ -377,7 +377,6 @@ nav .custom-icon-container {
   right: 0;
 }
 main {
-  /* height: 2px; */
   background-color: var(--background);
 }
 .fashion-style {
@@ -475,7 +474,7 @@ padding: 11px 20px;
     font-size: 16px;
     position: absolute;
     top: 48%;
-    left: 47.5%;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 
@@ -905,7 +904,4 @@ line-height: 170%; /
 
       .footer_bottom > p > span {
         color: #fa541c;
-      }.footer {
-
-}
-
+      }

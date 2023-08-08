@@ -243,15 +243,6 @@
     margin-bottom: 16px;
   }
   .footer_bottom-pay img {
-    width: 100%;
-  }
-  .coppyright {
-    margin-top: 20px;
-  }
-  .footer__col-desc {
-    display: none;
-  }
-  .footer .more-info > p {
-    text-align: center;
+    width: auto;
   }
 }

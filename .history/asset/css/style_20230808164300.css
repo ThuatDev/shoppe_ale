@@ -377,7 +377,7 @@ nav .custom-icon-container {
   right: 0;
 }
 main {
-  /* height: 2px; */
+  height: 2000px;
   background-color: var(--background);
 }
 .fashion-style {
@@ -905,7 +905,4 @@ line-height: 170%; /
 
       .footer_bottom > p > span {
         color: #fa541c;
-      }.footer {
-
-}
-
+      }
