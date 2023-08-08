@@ -1,0 +1,765 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+body {
+  padding-top: 114px;
+}
+:root {
+  --main-color: #fa541c;
+  --white-color: #fff8f6;
+  --text-color: #3d3737;
+  --gray-text: #85858a;
+  --width-container: 1280px;
+  --background: #fafafa;
+}
+header {
+  /* fix cho nó giữ nguyên vị trí khi scroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* nhưng tôi muốn nó chiếm vị trí của nó trong flow của trang web */
+}
+.top-bar {
+  background-color: var(--main-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: var(--width-container);
+  height: 60px;
+}
+.site .site-info .site-desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  color: var(--white-color);
+}
+/* user-action  */
+.currency {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.user-actions .sign-in-btn {
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  border: none;
+  cursor: pointer;
+  border-right: 1px solid var(--white-color);
+  padding-right: 15px;
+
+  background-color: var(--main-color);
+  margin-right: 30px;
+}
+.user-actions .currency-icon svg {
+  width: 18.319px;
+  height: 10.781px;
+}
+.user-actions .currency-option {
+  width: 32px;
+  height: 27px;
+  color: var(--white-color);
+  line-height: 170%;
+  margin-left: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+/* css nav  */
+nav {
+  background-color: var(--background);
+}
+nav .site-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: var(--width-container);
+  height: 72px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: var(--width-container); /* Đảm bảo menu nằm trong phạm vi container */
+}
+
+.menu li {
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* flex-basis: calc(
+      (100% - 60px) / 4
+    ); */
+  /* 60px là tổng khoảng cách giữa 4 menu item (4 - 1) * 20px */
+  text-align: center; /* Căn giữa nội dung trong menu item */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 186px;
+}
+
+/* Custom classes for menu items */
+.menu-item {
+  /* Add your custom styles for menu items here */
+}
+
+/* Optional styles for icons */
+
+.icon-page {
+  background-image: url("../image/page.svg");
+  margin-top: 8px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  display: block;
+}
+.colorx {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 3px;
+  display: flex;
+  align-items: center;
+  position: relative; /* Cần đặt position: relative; cho phần tử cha */
+}
+.colorx-2 {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 5px 9px;
+  margin-left: 10px;
+}
+.cart-count {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  font-size: 10px;
+  display: flex;
+}
+.icon-cart {
+  background-image: url("../image/cart.svg");
+  color: #ffffff;
+  z-index: 1;
+  display: block;
+  margin-right: -12px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-search {
+  background-image: url("../image/search.svg");
+  width: 24px;
+
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.search {
+  display: flex;
+  margin-right: 14px;
+  border-radius: 4px;
+  width: 215px;
+  height: 40px;
+  /* Drop */
+  box-shadow: 0px 2px 100px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search .input-search {
+  padding: 8px 16px;
+  position: relative;
+  border-radius: 4px;
+  background-color: var (--white-color);
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  margin-top: 2px;
+}
+.input-search::placeholder {
+  color: #85858a; /* Màu sắc của placeholder */
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.custom-icon-container .icon-cart {
+  margin-right: 12px;
+}
+nav .custom-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* css banner  */
+
+/* CSS cho biểu tượng giỏ hàng */
+.cart-icon {
+  margin-right: 8px;
+}
+
+.banner {
+  border-top: 1px solid #e8e8e8;
+  /* margin-bottom: 50px; */
+  height: 560px;
+  width: 100%;
+  background-color: #fdf1f1;
+  padding-bottom: 50px;
+  border-radius: 0 0 10px 10px;
+}
+.banner .site-3 {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  margin: 0 auto;
+  width: var(--width-container);
+  height: 560px;
+}
+.banner .site-3 .banner-img {
+}
+.banner .site-3 .banner-img img {
+  display: block;
+  width: 297px;
+  height: 480px;
+  object-fit: cover;
+  margin-left: 120px;
+}
+.banner .banners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 0px 175px 0px 86px; */
+  padding-left: 86px;
+
+  width: 59%;
+
+  /* margin-right: 86px; */
+  gap: 20px;
+}
+.banner .site-3 .banner-title .title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: var(--main-color);
+}
+.banner .site-3 .banner-desc {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 40.8px */
+  letter-spacing: 0.24px;
+}
+.banner .site-3 .add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banners .banner-title-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.banners .banner-title-2 .title-2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+.banners .banner-title-2 .banner-price {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+/* css fashion  */
+.product-by-category .fashion-item .add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* tạo dường line  */
+.category-name {
+  position: relative;
+}
+
+.category-name::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Điều chỉnh vị trí dưới của đường line */
+  left: 0;
+  width: 10%; /* Chiều rộng đường line bằng 50% chiều rộng của chữ */
+  height: 1px;
+  background-color: black; /* Màu sắc của đường line */
+}
+
+.rotate-right {
+  transform: scaleX(-1);
+  display: block;
+  width: 289px;
+  height: 143px;
+  object-fit: cover;
+  position: absolute;
+  /* bottom: 29; */
+  right: 0;
+}
+.fashion-item-img {
+  display: block;
+  width: 289px;
+  height: 143px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 29px;
+  right: 0;
+}
+main {
+  background-color: var(--background);
+}
+.fashion-style {
+  width: var(--width-container);
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.fashion-style .category-name {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.fashion-style .fashions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fashion-style .fashions .fashion-item .fashion-item-title {
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 40.8px */
+  letter-spacing: 0.24px;
+  padding-bottom: 12px;
+  margin-right: 32px;
+}
+.fashion-style .fashions .fashion-item .fashion-item-left {
+  padding: 25px 150px 50px 50px;
+}
+.fashion-style .fashions .fashion-item {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 544px;
+  height: 270px;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 40px;
+  margin-right: 96px;
+}
+.fashion-style .fashions .fashion-item .fashion-item-title .span {
+  color: #334155;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+/* css des  */
+.fashion-style .fashions .fashion-item .fashion-item-desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  color: #85858a;
+  padding-bottom: 12px;
+}
+/* css price  */
+.fashion-style .fashions .fashion-item .fasion-item-price {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+
+  padding-bottom: 12px;
+}
+
+/* Đặt chung phong cách cho button và đường line */
+.see-more-button,
+.line {
+  display: inline-block;
+}
+
+/* Phong cách cho nút See More */
+.see-more-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  font-size: 16px;
+
+  /* Đặt nút ở giữa màn hình */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Phong cách cho khung chứa nút và đường line */
+.button-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+/* Phong cách cho đường line */
+.line {
+  width: 555px;
+  height: 1px;
+  background-color: var(--main-color);
+}
+
+/* Phong cách cho đường line bên trái */
+.left-line {
+  margin-right: 10px;
+}
+
+/* Phong cách cho đường line bên phải */
+.right-line {
+  margin-left: 10;
+}
+.site-4 {
+  margin-top: 51px;
+  margin-bottom: 51px;
+  margin-left: 72px;
+  width: var(--width-container);
+}
+.category-apple-watch {
+  width: var(--width-container);
+  margin: 0 auto;
+  padding-top: 43px;
+}
+.category-apple-watch .category-name {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+.products .product-item {
+  display: flex;
+  flex-direction: row;
+  width: 544px;
+  padding: 8px 16px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.06);
+}
+.products .product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 27px;
+}
+.products .product-content .product-apple-watch-title .product-name
+{
+
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.products .product-content .product-apple-watch-desc
+{
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+}
+  .products .product-content {
+
+    font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.2px;
+color: #3D3737;
+  }
+.products .product-content .product-status {
+  font-size: 12px;
+  display: flex;
+padding: 0px 8px;
+margin-left: 18px;
+align-items: flex-start;
+
+color: #389E0D;
+border: 1px solid #389E0D;
+border-radius: 10px;
+border-radius: 10px;
+background:  #F6FFED;
+}
+.products .product-item .prouduc-status-2 {
+  display: flex;
+}
+.products .product-item .prouduc-status-2 .name-status {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+.products .product-item .prouduc-status-2 .value {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  color: #389e0d;
+}
+.category-apple-watch .site-5 .products .product-item .product-item-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  padding-bottom: 12px;
+}
+.product-item .product-item-img-1 {
+  display: block;
+  width: 245px;
+  height: 261px;
+  object-fit: cover;
+}
+
+.product-content .product-apple-watch-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+/* css category-apple-watch  */
+/* css màu  */
+/* Phong cách cho tùy chọn màu sắc */
+.color-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 20px;
+}
+.color-title {
+  margin-right: 37px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.color-option-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* margin: 5px; */
+  display: inline-block;
+}
+/* product-desc  */
+.product-desc {
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /
+}
+
+/* Định dạng màu sắc cho từng option */
+.color-option-item:nth-child(4) {
+  background-color: rgb(22, 16, 16) !important;
+  /* Màu sắc option 1 */
+}
+.color-option-item:nth-child(1) {
+  display: none;
+}
+.color-option-item:nth-child(2) {
+  background-color: rgb(232, 232, 237); /* Màu sắc option 2 */
+}
+
+.color-option-item:nth-child(3) {
+  background-color: rgb(1, 39, 1); /* Màu sắc option 3 */
+}
+.color-option-item:nth-child(5) {
+  background-color: rgb(103, 34, 7); /* Màu sắc option 3 */
+}
+
+
+.use-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  gap: 176px;
+  margin-bottom: 31px;
+}
+.use-row .add-to-cart-button{
+  background-color: var(--main-color);
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.use-row .add-to-cart-button .cart-icon {
+  color: white;
+  text-align: center;
+}
+.site-5  .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+}
+.site-5  .products .product-item{
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+
+/* fix line  */
+.site-cover .see-more-button,
+.line {
+  display: inline-block;
+}
+
+/* Phong cách cho nút See More */
+.site-cover .see-more-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  font-size: 16px;
+
+  /* Đặt nút ở giữa màn hình */
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+
+/* Phong cách cho khung chứa nút và đường line */
+.site-cover .button-wrapper {
+  position: relative;
+  margin-top: 51px;
+
+
+}
+
+/* Phong cách cho đường line */
+.site-cover.line {
+  width: 19px ;
+  height: 1px;
+  background-color: var(--main-color);
+}
+
+/* Phong cách cho đường line bên trái */
+.site-cover .left-line {
+  margin-right: -19px;
+}
+
+/* Phong cách cho đường line bên phải */
+.site-cover .right-line {
+  margin-left: 10;
+}
+.site-cover .site-4 {
+  margin-top: 51px;
+  margin-bottom: 51px;
+  margin-left: 72px;
+  width: var(--width-container);
+}
