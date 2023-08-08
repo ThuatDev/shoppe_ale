@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #c0b4b4;
+  margin-top: 18px;
+}
+.payment-box {
+  width: 700px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 100px auto;
+}
+.payment-box .payment-logo {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.payment-box .payment-title {
+  color: var(--primarry, #fa541c);
+  /* Heading/H2-32px-medium */
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}

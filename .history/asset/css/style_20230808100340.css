@@ -810,10 +810,9 @@ line-height: 170%; /
   background-color: var(--background);
 }/* CSS for the footer and its columns */
       .footer {
-        margin-top: 110px;
+        margin-top: 51px;
         padding-top: 24px;
         background-color: #fff1f0;
-        padding-left: 50px;
       }
 
       .footer_wrapper {

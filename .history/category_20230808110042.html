@@ -5,26 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-    <!-- import font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- reponsive cho mobi và tablet -->
+    <link rel="stylesheet" href="./asset/css/category.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
       href="./asset/css/responsive.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
-    />
-    <style></style>
+    <style>
+      .color-option{
+ filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.06));
+ background: #f7f7f7;
+ margin-top: 20px;
+ padding: 3px 15px !important ;
+ border-radius: 30px;
+ /* đỗ bóng cho màu sắc 0 */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+.products .product-item {
+      display: flex;
+      height: 178px;
+    flex-direction: row;
+    width: 520px;
+    padding: 8px 16px;
+    justify-content: flex-end;
+    align-items: center;
+  box-sizing: content-box;
+    border-radius: 8px;
+    background: var(--white, #fff);
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.06);
+
+}
+.products .product-content {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #3D3737;
+    padding: 56px 0;
+}
+    </style>
   </head>
   <body>
-    <i class="bx bx-page"></i>
     <header class="header">
       <div class="top-bar">
         <div class="site">
@@ -296,135 +320,104 @@
         </div>
       </nav>
     </header>
-    <section class="banner">
-      <div class="site-3">
-        <div class="banners">
-          <div class="banner-title">
-            <h1 class="title">TRENDING PRODUCT</h1>
-          </div>
-          <div class="banner-desc">
-            <p class="desc">
-              We provide the best and highest-quality products on the market
-              today
-            </p>
-          </div>
-          <div class="banner-title-2">
-            <h1 class="title-2">Apple Watch Dragon</h1>
-            <p class="banner-price">$1500</p>
-          </div>
+       <main class="main">
+      <section class="category">
+        <div class="container_fluid">
+          <div class="category_wrapper">
+            <!-- nav bar -->
+            <div class="category_navbar">
+              <div class="category_filter">
+                <span>Filter</span>
+                <img src="./assets/icons/filter.svg" alt="" />
+              </div>
+              <!-- search filter -->
+              <div class="category_filter-item">
+                <div class="category_filter-search">
+                  <span>Search</span>
+                  <input type="text" placeholder="Search product" />
+                  <div class="items_search">
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- apple watch filter -->
+              <div class="category_filter-item">
+                <div class="category_filter-search">
+                  <span>Search</span>
+                    <div class="checks_filter">
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 7</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 8</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 9</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 10</span>
+                        </div><div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 11</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 12</span>
+                        </div>
+                    </div>
+                                    </div>
+                </div>
+                <!-- price filter -->
+                <div class="category_filter-item">
+                    <div class="category_filter-search">
+                      <span>Price ($)</span>
+                        <div class="filter_price">
+                            <span>From</span>
+                            <input type="text" name="" id="" value="1">
+                             <span>To</span>
+                            <input type="text" name="" id="" value="15">
+                        </div>
+                                        </div>
+                    </div>
+                    <!-- status -->
+                    <div class="category_filter-item">
+                        <div class="category_filter-search">
+                          <span>Status</span>
+                            <div class="checks_filter">
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>All</span>
+                                </div>
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Available</span>
+                                </div>
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Unavailable</span>
+                                </div>
 
-          <div class="banner-bnt">
-            <button class="add-to-cart-button">
-              <i class="cart-icon fas fa-shopping-cart"></i>
-              Add to Cart
-            </button>
-          </div>
-        </div>
-        <div class="banner-img">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/242b/2c00/2f405467f362933758832a65e306ffa3?Expires=1692576000&Signature=cmHmqcEklxue7egZVDg5kj9AfaLkb2bOuP5FDPkKvIQlAYBi8g6fRZ7~NIcSof0TzoKI79GyGkvg-JKyjNDzDXNdvs2Xz4WWGulFcx5~0sXOAskPxnD3~czpSYPHEeWTtWYzba6BCDPg5YgT6EQcyUFXOQw2P4KaA1mfjJBpN9w6AcKjV9GVTy3edPNJ8sSxpbbOoEWPhO2VNspuI4f9V1hnmc2EA0E3UDQ3Emld5C2zovdTYzX0pKfc9udKmPYUe0~7JiR8Z6CYZ0zE0RC172hRl9gON58R9komsYIFoP3h5R1b2yV~o~m6TeL5UYC55QKWCQozBbaxUrRTzONFOw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-    <main>
-      <section class="product-by-category">
-        <div class="fashion-style">
-          <h1 class="category-name">Fashion style</h1>
-          <div class="fashions">
-            <div class="fashion-item">
-              <div class="fashion-item-left">
-                <h1 class="fashion-item-title">
-                  Luxurious <span>Eyewear</span>
-                </h1>
-                <p class="fashion-item-desc">
-                  See the beauty of exotic world with the luxurious glasses
-                </p>
-                <p class="fasion-item-price">$1500</p>
-                <button class="add-to-cart-button">
-                  <i class="cart-icon fas fa-shopping-cart"></i>
-                  Add to Cart
-                </button>
+                            </div>
+                                            </div>
+                        </div>
               </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/b310/8600/ca95898efb4f9fed284f3267eb8e11a7?Expires=1692576000&Signature=Q0pV80gVvzku9ktKsWkJ95di39CYJ~NsdI-UjPXRgaAhBk0~V7CziXU-~uUrmZMP2NEwB5IdOKYuEFtMsKyt~p8joBOvymVhZxKBad5-s~hzCRRXX-1D1sMADoYZQoYJEehVzQJ4ZiXs9JaMI~ztw3i9YfTS5pTQS2xerMtujNDKKH9iBDMRzhNUlvPgyQ974d0Uglarm~z6h~VQvEZN~YivEEl-AgXRk2O31w~6N2RKOh5gLAgwT5at86lbja-Ql7UVKfBqqrqfcQEYDcPrqPStF3FcaJ2Je1KR5pN3sT~VAGHbvHVc70aj9~mxbRjBOPGVc0qCkW0LSk4sqbBQRA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt="Image"
-                class="fashion-item-img rotate-right item-image"
-              />
-            </div>
-            <div class="fashion-item">
-              <div class="fashion-item-left">
-                <h1 class="fashion-item-title">
-                  Luxurious <span>Eyewear</span>
-                </h1>
-                <p class="fashion-item-desc">
-                  See the beauty of exotic world with the luxurious glasses
-                </p>
-                <p class="fasion-item-price">$1500</p>
-                <button class="add-to-cart-button">
-                  <i class="cart-icon fas fa-shopping-cart"></i>
-                  Add to Cart
-                </button>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/46fb/166d/42bf819cf183793fb2c7fb1ad7819242?Expires=1692576000&Signature=GbC7zCquN4hnQnCXeHVQybkwc-ECWn5uWh~v2neh68QN89EVnD6r7XwNF9yi4bX8~9U~fPWC7S3o4s8vL-70LcMmzDPtRWBtxx0jZIocb0b6B-Osr8g0Z9LoT41TXThj7llkKiWiNQPZyBXvZE0mcPHhs2Bu9i4RAXTucyZ3hxDeJr-eVXRB-~bsg0QhfyX8884Ggyu9G~fd13JFq4yj9tE3gK2ykm3L238ZQFMNwtjDwBlPTEnLPg38Sjeuem4ZGEbf1oJj1hx~fjpr-FCHEwxSnFZrhDUm3uJggG1CXHBrFHFLNDCUsn1uELT~pR9XbVUX-k6zZ-6LNI2zlDeKkg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt="Image"
-                class="fashion-item-img item-image"
-              />
-            </div>
-            <div class="fashion-item">
-              <div class="fashion-item-left">
-                <h1 class="fashion-item-title">
-                  Luxurious <span>Eyewear</span>
-                </h1>
-                <p class="fashion-item-desc">
-                  See the beauty of exotic world with the luxurious glasses
-                </p>
-                <p class="fasion-item-price">$1500</p>
-                <button class="add-to-cart-button">
-                  <i class="cart-icon fas fa-shopping-cart"></i>
-                  Add to Cart
-                </button>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/ab17/c2d2/a9b1eefa7abb0c90e28849f1cd2cf0f1?Expires=1692576000&Signature=e0VyzDU9r7GcT4LBOQYcLuk3ASjE-qmZ2WkmJsfW0oDAmX3AHvPEXfg0o6JhmSN4cX~HiU6KRReKp-5JGQFEIoS-XQQqqQeL7eRLd5qJsAd8ImS8HqW~LejedUe8NqnU4jzUe6VBb3DmZZARKlEPDkrXp1yDnUSOEUMZVZEo~zXA4NdOeSrSDkdok9luZJdiJpoYUM6WZ1NA9Egdq3z6yIyY4vVTSs2OU0fNeK3ZGQs7wjtGLFx~Wce0BQB3Qa86FwFTK0PL-AWRymN5QkPks2FnX26o~yz-ra9oZdSv9-NtaZJXMqXsKvDasCGWcKHcPqjeKf2wRjZyVLeZfgCn3g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt="Image"
-                class="fashion-item-img item-image"
-              />
-            </div>
-            <div class="fashion-item">
-              <div class="fashion-item-left">
-                <h1 class="fashion-item-title">
-                  Luxurious <span>Eyewear</span>
-                </h1>
-                <p class="fashion-item-desc">
-                  See the beauty of exotic world with the luxurious glasses
-                </p>
-                <p class="fasion-item-price">$1500</p>
-                <button class="add-to-cart-button">
-                  <i class="cart-icon fas fa-shopping-cart"></i>
-                  Add to Cart
-                </button>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/b310/8600/ca95898efb4f9fed284f3267eb8e11a7?Expires=1692576000&Signature=Q0pV80gVvzku9ktKsWkJ95di39CYJ~NsdI-UjPXRgaAhBk0~V7CziXU-~uUrmZMP2NEwB5IdOKYuEFtMsKyt~p8joBOvymVhZxKBad5-s~hzCRRXX-1D1sMADoYZQoYJEehVzQJ4ZiXs9JaMI~ztw3i9YfTS5pTQS2xerMtujNDKKH9iBDMRzhNUlvPgyQ974d0Uglarm~z6h~VQvEZN~YivEEl-AgXRk2O31w~6N2RKOh5gLAgwT5at86lbja-Ql7UVKfBqqrqfcQEYDcPrqPStF3FcaJ2Je1KR5pN3sT~VAGHbvHVc70aj9~mxbRjBOPGVc0qCkW0LSk4sqbBQRA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt="Image"
-                class="fashion-item-img rotate-right item-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="site-4">
-        <div class="button-wrapper">
-          <button class="see-more-button">See More</button>
-          <div class="line left-line"></div>
-          <div class="line right-line"></div>
-        </div>
-      </div>
-      <section class="category-apple-watch">
-        <div class="site-5">
+              <!-- category product list -->
+             <div class="site-5">
           <h1 class="category-name">Apple watch</h1>
           <div class="products">
             <div class="product-item">
@@ -435,18 +428,16 @@
                   class="product-item-img-1"
                 />
               </div>
-              <div class="product-content">
+               <div class="product-content">
                 <div class="product-apple-watch-title">
                   <div class="product-name">Apple Watch Series 7</div>
                   <p class="product-status">Available</p>
                 </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <div class="color-option">
-                    <div class="color-title">Colors:</div>
 
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
@@ -483,9 +474,7 @@
                   <div class="product-name">Apple Watch Series 7</div>
                   <p class="product-status">Available</p>
                 </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
+
                 <div class="prouct-color">
                   <p class="color-title">Colors:</p>
                   <div class="color-option">
@@ -526,9 +515,7 @@
                   <div class="product-name">Apple Watch Series 7</div>
                   <p class="product-status">Available</p>
                 </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
+
                 <div class="prouct-color">
                   <p class="color-title">Colors:</p>
                   <div class="color-option">
@@ -564,18 +551,16 @@
                   class="product-item-img-1"
                 />
               </div>
-              <div class="product-content">
+               <div class="product-content">
                 <div class="product-apple-watch-title">
                   <div class="product-name">Apple Watch Series 7</div>
                   <p class="product-status">Available</p>
                 </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <div class="color-option">
-                    <div class="color-title">Colors:</div>
 
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
                     <div class="color-option-item"></div>
@@ -606,323 +591,11 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- section iphone model  -->
-      <section class="category-apple-watch">
-        <div class="site-5">
-          <h1 class="category-name">Iphone model</h1>
-          <div class="products">
-            <div class="product-item">
-              <div class="product-item-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/228a/e68e/a1222b412c859af020942986bfc319ec?Expires=1692576000&Signature=Cv0h9Uh~klKraHKdU6CYPpiNRxkwuO5hnd58b8Xdo47bEICOFAaRKjwx-s0b9DLn9d0SAS5eiy8VZ3D2F4XJ6pG42XHn2p3yx1Lsp9HWf9yz03HRxE04pmeo6fh8XUQPy~~fxNCmetep0huREcKKTGj5GEQXCsfA1Tk21I2eJBAr4QxrWsVnFGsv5ZAtDJDPY5TNkyRzRGIpAgmwwaJj0myOLvWoMY7jlbjP8gdQA8E9YhVJ8P34fiG6h1McWJDjGaIQzjRhmbChhhj23GkusuqhPtF8fImPiNna5lTAp9vXRaU7Zr4MZQjFPkQn20qu~5b8Dj1BV3MOEcw0QA5U7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                  class="product-item-img-1"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-apple-watch-title">
-                  <div class="product-name">Iphone 13 ProMax</div>
-                  <p class="product-status">Available</p>
-                </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <div class="color-option">
-                    <div class="color-title">Colors:</div>
-
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                  </div>
-                </div>
-                <div class="prouduc-status-2">
-                  <p class="name-status">Remaining:</p>
-                  <p class="value">05</p>
-                </div>
-                <div class="use-row">
-                  <div class="produc-price">
-                    <p class="price">$1500</p>
-                  </div>
-
-                  <div class="category-apple-watch-bnt">
-                    <button class="add-to-cart-button">
-                      <i class="cart-icon fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/021c/ccd4/a6e1215491ce271ccb37448a96a8b0b9?Expires=1692576000&Signature=A0kdYT~UyMoW6rqgkgXCrXzW9sr-9BK8RY8CSJCNTj5dfvxrA2Nkn8kbydYtKMxCA4QFbEhdLrSXJ1v7Fovoz2G1vojwUg0WaojrbEcDkrfJsQd7CzqZF-P1vfFVbV21pZPBHmcMPcdQ2KbH-Yh6raoj4Hr39KCxdtYyykMmuMDfPYvmn~xnxAB44LknhfiMfpBVpV4MOCGJ43vtnC~u2nl2rYon90inr0Gj1vguNwtn0OiQv2g55ss7lIXUpBEN7V4xEMF6YFf1AeBXLm4rPRE7dtVIB954DE0nflt0p6P-KoDRDVVWDi2pKqz-~8~sPs6EWvrawc1q~tGJVoOXeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                  class="product-item-img-1"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-apple-watch-title">
-                  <div class="product-name">Apple Watch Series 7</div>
-                  <p class="product-status">Available</p>
-                </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <p class="color-title">Colors:</p>
-                  <div class="color-option">
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                  </div>
-                </div>
-                <div class="prouduc-status-2">
-                  <p class="name-status">Remaining:</p>
-                  <p class="value">05</p>
-                </div>
-                <div class="use-row">
-                  <div class="produc-price">
-                    <p class="price">$1500</p>
-                  </div>
-
-                  <div class="category-apple-watch-bnt">
-                    <button class="add-to-cart-button">
-                      <i class="cart-icon fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/021c/ccd4/a6e1215491ce271ccb37448a96a8b0b9?Expires=1692576000&Signature=A0kdYT~UyMoW6rqgkgXCrXzW9sr-9BK8RY8CSJCNTj5dfvxrA2Nkn8kbydYtKMxCA4QFbEhdLrSXJ1v7Fovoz2G1vojwUg0WaojrbEcDkrfJsQd7CzqZF-P1vfFVbV21pZPBHmcMPcdQ2KbH-Yh6raoj4Hr39KCxdtYyykMmuMDfPYvmn~xnxAB44LknhfiMfpBVpV4MOCGJ43vtnC~u2nl2rYon90inr0Gj1vguNwtn0OiQv2g55ss7lIXUpBEN7V4xEMF6YFf1AeBXLm4rPRE7dtVIB954DE0nflt0p6P-KoDRDVVWDi2pKqz-~8~sPs6EWvrawc1q~tGJVoOXeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                  class="product-item-img-1"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-apple-watch-title">
-                  <div class="product-name">Apple Watch Series 7</div>
-                  <p class="product-status">Available</p>
-                </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <p class="color-title">Colors:</p>
-                  <div class="color-option">
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                  </div>
-                </div>
-                <div class="prouduc-status-2">
-                  <p class="name-status">Remaining:</p>
-                  <p class="value">05</p>
-                </div>
-                <div class="use-row">
-                  <div class="produc-price">
-                    <p class="price">$1500</p>
-                  </div>
-
-                  <div class="category-apple-watch-bnt">
-                    <button class="add-to-cart-button">
-                      <i class="cart-icon fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-item-img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/021c/ccd4/a6e1215491ce271ccb37448a96a8b0b9?Expires=1692576000&Signature=A0kdYT~UyMoW6rqgkgXCrXzW9sr-9BK8RY8CSJCNTj5dfvxrA2Nkn8kbydYtKMxCA4QFbEhdLrSXJ1v7Fovoz2G1vojwUg0WaojrbEcDkrfJsQd7CzqZF-P1vfFVbV21pZPBHmcMPcdQ2KbH-Yh6raoj4Hr39KCxdtYyykMmuMDfPYvmn~xnxAB44LknhfiMfpBVpV4MOCGJ43vtnC~u2nl2rYon90inr0Gj1vguNwtn0OiQv2g55ss7lIXUpBEN7V4xEMF6YFf1AeBXLm4rPRE7dtVIB954DE0nflt0p6P-KoDRDVVWDi2pKqz-~8~sPs6EWvrawc1q~tGJVoOXeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                  class="product-item-img-1"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-apple-watch-title">
-                  <div class="product-name">Apple Watch Series 7</div>
-                  <p class="product-status">Available</p>
-                </div>
-                <div class="product-apple-watch-desc">
-                  <p class="desc">Midnight Alumium Case with Sports Band</p>
-                </div>
-                <div class="prouct-color">
-                  <div class="color-option">
-                    <div class="color-title">Colors:</div>
-
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                    <div class="color-option-item"></div>
-                  </div>
-                </div>
-                <div class="prouduc-status-2">
-                  <p class="name-status">Remaining:</p>
-                  <p class="value">05</p>
-                </div>
-                <div class="use-row">
-                  <div class="produc-price">
-                    <p class="price">$1500</p>
-                  </div>
-
-                  <div class="category-apple-watch-bnt">
-                    <button class="add-to-cart-button">
-                      <i class="cart-icon fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="site-cover site-iphone">
-            <div class="button-wrapper">
-              <button class="see-more-button">See More</button>
             </div>
           </div>
         </div>
       </section>
+
     </main>
-    <footer class="footer">
-      <div class="container_fluid">
-        <div class="footer_wrapper">
-          <div class="footer__col">
-            <div class="footer_logo">
-              <img src="./assets/images/logo.png" alt="" />
-            </div>
-            <p class="footer__col-desc">
-              Good health is important, so all of our products have been
-              carefully designed to bring out the best in you.
-            </p>
-          </div>
-          <div class="footer__col more-info">
-            <p>MORE INFO</p>
-            <div class="footer__moreInfo">
-              <ul>
-                <li><a href="">Shipping & Delivery</a></li>
-                <li><a href="">Refund Policy</a></li>
-                <li><a href="">Partner Program</a></li>
-                <li><a href="">You Buy, We Donate</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms & Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__col more-info about-us">
-            <p>CONTACT US</p>
-            <div class="footer__moreInfo">
-              <ul>
-                <li><a href="">Phone: +44123456789</a></li>
-                <li>
-                  <a href=""
-                    >Address: 3517 W. Gray St. Utica, Pennsylvania 57867</a
-                  >
-                </li>
-                <li><a href="">Email: good4me@gmail.com</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__col more-info">
-            <p>NAVIGATION</p>
-            <div class="footer__moreInfo">
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Iphone</a></li>
-                <li><a href="">Apple watch</a></li>
-                <li><a href="">Fashion style</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer_bottom">
-          <div class="footer_bottom-icon">
-            <img src="./assets/images/fb.svg" alt="" />
-            <img src="./assets/images/ins.svg" alt="" />
-            <img src="./assets/images/twitter.svg" alt="" />
-            <img src="./assets/images/p.svg" alt="" />
-            <img src="./assets/images/ytb.svg" alt="" />
-          </div>
-          <!-- coppyright -->
-          <p class="coppyright">
-            © 2021, <span>GOOD4ME.</span> Powered by Shopify
-          </p>
-          <div class="footer_bottom-pay">
-            <img src="./assets/images/pay.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-      <div class="footer-column">
-        <div class="logo">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/3599/972c/6415ab4dfc2bea3fdf27bb39a1a70641?Expires=1692576000&Signature=LiK33wb-1Rgfz~4dnPA9EHirKhApp3lVLHIMBZAxuanwDH3O14KFYDMmRL5a~wESC0tVDFRYbLPN6zpa-nbcJJElsIrA1W1O01fg6IpKmkXKzTxYwzDVWXb01f0xhwPXra2y3CzDf~wzL-dInDzcN46b9M71fPj5rMXN7S1S1goOReCRNzJOAMo9OPi4-gO6J4b8OQ7sRaaqlxKrsAE1EhxI5LRWLzY3M4Gl5sa6XcjuLgrhbqryUjVUnUSwbRTgM9D91mbxpE~u6-iPQhfJn4q3iF-qFuf~ePPgc5c7nfesbfiO476E0la6ZY04ZSTbYVenK2n74WoymVvmk~QaZw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt=""
-            class="logo-footer"
-          />
-        </div>
-        <p>
-          Good health is important, so all of our products have been carefully
-          designed to bring out the best in you.
-        </p>
-      </div>
-      <div class="footer-column col-2">
-        <h4>MORE INFO</h4>
-        <ul>
-          <li>Shipping & Delivery</li>
-          <li>Refund Policy</li>
-          <li>Partner Program</li>
-          <li>You Buy, We Donate</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
-        </ul>
-      </div>
-      <div class="footer-column col-3">
-        <h4>CONTACT US</h4>
-        <ul>
-          <li>Phone: +44123456789</li>
-          <li>Address: 3517 W. Gray St. Utica, Pennsylvania 57867</li>
-          <li>Email: good4me@gmail.com</li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>NAVIGATION</h4>
-        <ul>
-          <li>Home</li>
-          <li>Iphone</li>
-          <li>Apple watch</li>
-          <li>Fashion style</li>
-        </ul>
-      </div>
-      <div class="footer-line"></div>
-
-      <div class="footer-social-icons">
-        <i class="icon-facebook"></i>
-        <i class="icon-instagram"></i>
-        <i class="icon-twitter"></i>
-        <i class="icon-youtube"></i>
-      </div>
-
-      <div class="powered-by">© 2021, GOOD4ME. Powered by Shopify</div>
-
-      <div class="payment-icons">
-        <i class="icon-iphone"></i>
-        <i class="icon-google-pay"></i>
-        <i class="icon-paypal"></i>
-        <i class="icon-visa-pay"></i>
-      </div>
-    </footer> -->
   </body>
 </html>

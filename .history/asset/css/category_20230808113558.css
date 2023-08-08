@@ -1,0 +1,571 @@
+.category {
+  background-color: #fafafa;
+  padding-top: 40px;
+}
+
+.category_wrapper {
+  display: flex;
+}
+
+.category_navbar {
+  width: 295px;
+  padding: 16px;
+  background-color: white;
+  margin-right: 16px;
+}
+
+.category_filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category_filter > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.category_filter > img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.category_filter-item {
+  padding: 24px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.category_filter-search > span {
+  font-size: 18px;
+}
+
+.category_filter-search > input {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  padding: 20px 6px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  color: #85858a;
+}
+
+.category_filter-search .items_search {
+  display: flex;
+  align-items: center;
+}
+
+.category_filter-search .items_search .item-search {
+  background-color: #fff8f6;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 4px 12px;
+  color: #fa541c;
+  border-radius: 30px;
+}
+
+.category_filter-search .items_search .item-search > span {
+  font-size: 10px;
+}
+
+.category_filter-search .checks_filter {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.category_filter-search .checks_filter .check_filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category_filter-search .checks_filter .check_filter > input {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+}
+
+.category_filter-search .checks_filter .check_filter > span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d3737;
+}
+
+.category_filter-search .filter_price {
+  margin-top: 16px;
+  color: #3d3737;
+  display: flex;
+  align-items: center;
+}
+
+.category_filter-search .filter_price > span:first-of-type {
+  padding-right: 8px;
+}
+
+.category_filter-search .filter_price > span:last-of-type {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.category_filter-search .filter_price input {
+  width: 60px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.category_filter-search .filter_price input:last-of-type {
+  margin-left: 8px;
+}
+
+.category_products {
+  width: calc(100% - 295px);
+  margin-left: 16px;
+  flex: 1;
+}
+
+.category_products .apple {
+  margin: 0;
+}
+
+.category_products .box_card-image {
+  max-width: 152px;
+  max-height: 162px;
+}
+
+.category_products .box_card-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.category_products .apple .box_cards .box_card-content {
+  gap: 8px 0px;
+  flex: 1;
+}
+
+.category_products .apple .box_cards .box_card {
+  margin: 8px 8px;
+}
+
+/* Main Payment Styles */
+.main_payment {
+  background-color: #fafafa;
+}
+
+.payment {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.payment_wrapper {
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.payment_box {
+  width: 100%;
+  padding: 40px;
+}
+
+.payment_box .payment_backHome {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.payment_box .payment_back {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px;
+  color: #fa541c;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fa541c;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.payment_title {
+  text-align: center;
+}
+
+.payment_title > img {
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+}
+
+.payment_title > h2 {
+  padding-top: 16px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: calc(38 / 32);
+  color: #fa541c;
+  letter-spacing: 0.01em;
+}
+
+.payment_title > p {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.payment_details {
+  margin-top: 16px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+}
+
+.payment_details > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #adabab;
+}
+
+.payment_details-order {
+  display: flex;
+  padding: 16px 0;
+}
+
+.payment_details-order > span:first-child {
+  width: 40%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.payment_details-order > span:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  width: 60%;
+}
+
+.payment_details-title {
+  color: #3d3737;
+}
+
+/* Main Order Styles */
+.main_order {
+  padding-top: 75px;
+}
+
+.main_order .order_history {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #eee;
+}
+
+.main_order .order_boxs {
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.main_order .order_no {
+  padding: 16px;
+}
+
+.main_order .order_no-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #3c4242;
+  gap: 14.53px;
+}
+
+.main_order .order_desc {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(27 / 16);
+  letter-spacing: 0em;
+  color: #85858a;
+}
+
+.main_order .order_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.main_order .order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 12px;
+}
+
+.main_order .order-thumb {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.main_order .order-thumb > img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.main_order .order-thumb .order_content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #334155;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0px;
+}
+
+.main_order .order-thumb .order_price {
+  color: #334155;
+}
+
+/* Main MyCard Styles */
+.main_mycard {
+  background: #fafafa;
+}
+
+.mycard {
+  padding-top: 40.8px;
+}
+
+.mycard_items {
+  width: 840px;
+}
+
+.mycard_infomation {
+  flex: 1;
+  background-color: #fff;
+  margin-top: 16px;
+}
+
+.mycard_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.mycard_heading > span {
+  color: #fa541c;
+}
+
+.mycard_infomation {
+  padding: 16px;
+}
+
+.mycard_infomation > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #3d3737;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.mycard_price {
+  font-size: 16px;
+  color: #3d3737;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mycard_count {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mycard_count .prev_mycard {
+  background-color: #ccc;
+  color: black;
+}
+
+.mycard_count .next_mycard {
+  background-color: black;
+  color: #fff;
+}
+
+.mycard_count > button {
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycard_wrapper {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  gap: 0px 32px;
+}
+
+.mycard-item {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 16px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 0px 79px;
+}
+
+.mycard-item-checked {
+  display: flex;
+  align-items: center;
+}
+
+.mycard-item-checked > input {
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+}
+
+.mycard-item-thumb {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+}
+
+.mycard-item-thumb > img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.mycard-item-thumb-content {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mycard-item-thumb-content > span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #85858a;
+  margin-top: 4px;
+}
+
+.category-name {
+  margin-bottom: 16px;
+}
+.btn_sortPage {
+  display: flex;
+
+  gap: 4px; /* Adjust the gap as needed */
+  margin-top: 16px;
+  margin-left: 450px;
+}
+
+.btn_sortPage button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px; /* Set a fixed width for the buttons */
+}
+
+.btn_sortPage button a {
+  text-decoration: none;
+  color: #333; /* Change the color as needed */
+  padding: 8px 12px;
+  border: 1px solid #ccc; /* Change the border color as needed */
+  /* border-radius: 4px; */
+  border: none;
+  display: block; /* Ensure the anchor takes the full button size */
+  width: 100%; /* Ensure the anchor takes the full button size */
+  /* Center the text horizontally */
+}
+.btn_sortPage button:nth-child(2) {
+  border: 1px solid #ccc; /* Change the border color as needed */
+  border-radius: 4px;
+  background-color: #fff8f6;
+}
+.btn_sortPage button:nth-child(1) {
+  border: 1px solid #ccc; /* Change the border color as needed */
+  border-radius: 4px;
+}
+.btn_sortPage button:nth-child(8) {
+  border: 1px solid #ccc; /* Change the border color as needed */
+  border-radius: 4px;
+}
+.btn_sortPage button a:hover {
+  background-color: #fafafa; /* Change the background color on hover as needed */
+}
+
+.btn_sortPage .prev img,
+.btn_sortPage .next img {
+  height: 16px;
+  display: block;
+}
+
+/* Optional: Style the "..." button differently */
+.btn_sortPage button:nth-child(5) a {
+  font-weight: bold;
+}
+
+/* Optional: Style the active button differently */
+.btn_sortPage button.active a {
+  background-color: #007bff; /* Change the active button background color as needed */
+  color: #fff; /* Change the active button text color as needed */
+  border: 1px solid #007bff; /* Change the active button border color as needed */
+}
