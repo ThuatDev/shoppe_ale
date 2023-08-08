@@ -6,7 +6,8 @@
     <title>Document</title>
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <link rel="stylesheet" href="./asset/css/cart.css" />
+    <!-- <link rel="stylesheet" href="./asset/css/cart.css" /> -->
+    <link rel="stylesheet" href="./asset/css/payment.css" />
     <!-- <link rel="stylesheet" href="./asset/css/category.css" /> -->
     <link
       rel="stylesheet"
@@ -17,6 +18,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <style>
+      @media screen and (max-width: 768px) {
+        .payment-box {
+          width: 100%;
+          height: 100%;
+        }
+        .payment-title {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -263,7 +277,7 @@
           <div class="logo">
             <img src="./asset/image/Logo_-_Good4Me_140x 1.png" alt="" />
           </div>
-         <ul class="menu">
+          <ul class="menu">
             <li class="menu-item menu-item-active">
               <a href="./index.html">HOME</a>
             </li>
@@ -296,359 +310,38 @@
         </div>
       </nav>
     </header>
-    <main>
     <div class="line"></div>
-    <section class="cart">
-      <div class="cart-header">
-        <h1 class="my-cart">My Cart</h1>
-        <p class="cart-cout">08 product</p>
-      </div>
-      <div class="line-2">
-      <div class="cart-detail">
-        <div class="all-car">
-        <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
 
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
+    <main>
+      <section class="payment">
+        <div class="payment-box">
+          <div class="payment-logo">
+            <img src="./assets/icons/ticky.png" alt="" />
+          </div>
+          <h1 class="payment-title">Your payment is successfully</h1>
+          <p class="payment-description">Thank you for choosing us.</p>
+          <div class="payment_details">
+            <h3>Payment details</h3>
+            <div class="payment_details-title">
+              <div class="payment_details-order">
+                <span>Order no:</span>
+                <span> #123456789</span>
+              </div>
+              <div class="payment_details-order">
+                <span>Oder date: 02/06/2022</span>
+                <span> Oder date: 02/06/2022</span>
+              </div>
+              <div class="payment_details-order">
+                <span>Total: </span>
+                <span>$3000</span>
+              </div>
             </div>
           </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
+          <div class="payment_backHome">
+            <a href="" class="payment_back">Back to home</a>
           </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
         </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item cart-end">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-
-</div>
-        <div class="form-check-out">
-          <div class="check-out-title">
-            <h1>Order information</h1>
-          </div>
-          <div class="check-out-desc">
-            <div class="amount">
-              <p class="amount-title">Total amount:</p>
-              <p class="amount-price">$24000</p>
-            </div>
-            <div class="discount">
-              <p class="discount-title">Discount:</p>
-              <p class="discount-price">$0</p>
-            </div>
-            <div class="total">
-              <p class="total-title">Total:</p>
-              <p class="total-pricew">$24000</p>
-            </div>
-            <div class="note">
-              <p class="note-title">Note:</p>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                class="note-text"
-              ></textarea>
-                <div class="check-out-button">
-              <button class="check-out-btn">Paynow</button>
-          </div>
-            </div>
-
-        </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="container_fluid">

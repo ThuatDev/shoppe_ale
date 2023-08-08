@@ -4,22 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <link rel="stylesheet" href="./asset/css/cart.css" />
-    <!-- <link rel="stylesheet" href="./asset/css/category.css" /> -->
+    <link rel="stylesheet" href="./asset/css/category.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
       href="./asset/css/responsive.css"
     />
-    <link
+     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+  <style>
+        @media screen and (max-width: 768px)
+        {
+          main {
+            height: auto;
+          }
+         .footer {
+  overflow: hidden;
+}
+
+          .category_navbar{
+            height: auto;
+          }
+          .category {
+            height: auto;
+          }
+.btn_sortPage {
+
+
+          margin-left: 0;
+          text-align: center;
+          margin-bottom: 10px;
+
+
+}
+.category_navbar {
+  display: none;
+}
+        }
+
+
+
+  </style>
+
   </head>
   <body>
-    <header class="header">
+      <header class="header">
       <div class="top-bar">
         <div class="site">
           <div class="site-info">
@@ -263,10 +296,8 @@
           <div class="logo">
             <img src="./asset/image/Logo_-_Good4Me_140x 1.png" alt="" />
           </div>
-         <ul class="menu">
-            <li class="menu-item menu-item-active">
-              <a href="./index.html">HOME</a>
-            </li>
+               <ul class="menu">
+            <li class="menu-item menu-item-active"><a href="#">HOME</a></li>
             <li class="menu-item">
               <a href="./category.html">FASHION STYLE</a>
             </li>
@@ -296,361 +327,543 @@
         </div>
       </nav>
     </header>
-    <main>
-    <div class="line"></div>
-    <section class="cart">
-      <div class="cart-header">
-        <h1 class="my-cart">My Cart</h1>
-        <p class="cart-cout">08 product</p>
-      </div>
-      <div class="line-2">
-      <div class="cart-detail">
-        <div class="all-car">
-        <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
+       <main class="main">
+      <section class="category">
+        <div class="container_fluid">
+          <div class="category_wrapper">
+            <!-- nav bar -->
+            <div class="category_navbar">
+              <div class="category_filter">
+                <span>Filter</span>
+                <img src="./assets/icons/filter.svg" alt="" />
+              </div>
+              <!-- search filter -->
+              <div class="category_filter-item">
+                <div class="category_filter-search">
+                  <span>Search</span>
+                  <input type="text" placeholder="Search product" />
+                  <div class="items_search">
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                    <div class="item-search">
+                        <span>iphone 13</span>
+                        <img src="./assets/icons/x.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- apple watch filter -->
+              <div class="category_filter-item">
+                <div class="category_filter-search">
+                  <span>Search</span>
+                    <div class="checks_filter">
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 7</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 8</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 9</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 10</span>
+                        </div><div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 11</span>
+                        </div>
+                        <div class="check_filter">
+                            <input type="checkbox" name="" id="">
+                            <span>Apple Watch Series 12</span>
+                        </div>
+                    </div>
+                                    </div>
+                </div>
+                <!-- price filter -->
+                <div class="category_filter-item">
+                    <div class="category_filter-search">
+                      <span>Price ($)</span>
+                        <div class="filter_price">
+                            <span>From</span>
+                            <input type="text" name="" id="" value="1">
+                             <span>To</span>
+                            <input type="text" name="" id="" value="15">
+                        </div>
+                                        </div>
+                    </div>
+                    <!-- status -->
+                    <div class="category_filter-item">
+                        <div class="category_filter-search">
+                          <span>Status</span>
+                            <div class="checks_filter">
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>All</span>
+                                </div>
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Available</span>
+                                </div>
+                                <div class="check_filter">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Unavailable</span>
+                                </div>
 
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
+                            </div>
+                                            </div>
+                        </div>
+              </div>
+              <!-- category product list -->
+             <div class="site-5">
+          <h1 class="category-name">Apple watch</h1>
+          <div class="products">
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+               <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+               <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+               <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+               <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+               <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item-img">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/d24e/418f/6383c10a7bea25a1fad1b56e8f930977?Expires=1692576000&Signature=SlMZelYF6~7J2c9LK~EP04LeBeHrWlAmS7a9SajtXtZjyVm5YgfvIHpDt8IRPgwRmXwsUBhFC2Ghw5b09txNIxbs0Y8mfN394zW9g6aP0qWTS7fxT3I5bvqlDq~ygxdqTHPhJSX2mMaz6PaAltjgwnrhjNPiSfM-EjSV4wkTUZzfI7AmRmEAcqzRoUyZDXGOT-tRDD~PgEzXqDcs~GSZ0~cohHMFbi31SDhgLwlYsVZDFpG5aGg0c5qGYSO~J0waGdXtTfHTBjsI77l0XN-brtV9TLEqh1wss8ZoBUWXii5DA3FRNohK5jegmGr8GTdPzEkWm2aTHdxrzx94ws2WgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="product-item-img-1"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-apple-watch-title">
+                  <div class="product-name">Apple Watch Series 7</div>
+                  <p class="product-status">Available</p>
+                </div>
+
+                <div class="prouct-color">
+                  <p class="color-title">Colors:</p>
+                  <div class="color-option">
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                    <div class="color-option-item"></div>
+                  </div>
+                </div>
+                <div class="prouduc-status-2">
+                  <p class="name-status">Status:</p>
+                  <p class="value">05</p>
+                </div>
+                <div class="use-row">
+                  <div class="produc-price">
+                    <p class="price">$1500</p>
+                  </div>
+
+                  <div class="category-apple-watch-bnt">
+                    <button class="add-to-cart-button">
+                      <i class="cart-icon fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+            <div class="btn_sortPage">
+                          <button class="prev"><a href="">
+                            <img src="./assets/icons/prev.svg" alt="" />
+                          </a></button>
+                          <button><a href="">1</a></button>
+                          <button><a href="">2</a></button>
+                          <button><a href="">3</a></button>
+                          <button><a href="">...</a></button>
+                          <button><a href="">9</a></button>
+                          <button><a href="">10</a></button>
+                          <button class="next"><a href="">
+                            <img src="./assets/icons/next.svg" alt="" />
+                          </a></button>
+                        </div>
+        </div>
             </div>
           </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
-
-        </div>
-         <div class="cart-item cart-end">
-          <label class="check-label">
-            <input type="checkbox" class="check-input" />
-
-          </label>
-          <div class="product-details">
-            <div class="product-image">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1674671748477-5354897d35c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-                alt="Product Image"
-              />
-            </div>
-            <div class="product-info">
-              <h2 class="product-name">Apple Watch Series 7</h2>
-              <p class="product-color">Color : Gray</p>
-            </div>
-          </div>
-          <p class="product-price">$100</p>
-          <div class="product-actions">
-            <div class="quantity-controls">
-              <button class="quantity-button">-</button>
-              <span class="quantity">2</span>
-              <button class="quantity-button-active">+</button>
-            </div>
-          </div>
-          <p class="total-price">$3000</p>
-            <div class="icon-thung-rac">
-          <!-- thêm giúp tôi icon thùng rác ở đây -->
-          <!-- ùng thẻ i chứ k ùng svg  -->
-          <i class="fas fa-trash-alt"></i>
-        </div>
-        <!-- icon thùng rác  -->
 
         </div>
 
-</div>
-        <div class="form-check-out">
-          <div class="check-out-title">
-            <h1>Order information</h1>
-          </div>
-          <div class="check-out-desc">
-            <div class="amount">
-              <p class="amount-title">Total amount:</p>
-              <p class="amount-price">$24000</p>
-            </div>
-            <div class="discount">
-              <p class="discount-title">Discount:</p>
-              <p class="discount-price">$0</p>
-            </div>
-            <div class="total">
-              <p class="total-title">Total:</p>
-              <p class="total-pricew">$24000</p>
-            </div>
-            <div class="note">
-              <p class="note-title">Note:</p>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                class="note-text"
-              ></textarea>
-                <div class="check-out-button">
-              <button class="check-out-btn">Paynow</button>
-          </div>
-            </div>
+      </section>
 
-        </div>
-        </div>
-      </div>
-    </section>
     </main>
-    <footer class="footer">
+<footer class="footer">
       <div class="container_fluid">
         <div class="footer_wrapper">
           <div class="footer__col">
