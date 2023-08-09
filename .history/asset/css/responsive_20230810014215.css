@@ -1,0 +1,310 @@
+@media (max-width: 767px) {
+  /* Điều chỉnh kiểu dáng và bố cục cho màn hình điện thoại di động */
+  .site .site-info .site-desc {
+    display: none;
+  }
+
+  /* .category-apple-watch-bnt-fix .add-to-cart-button {
+    display: block;
+  } */
+
+  /* .use-row .add-to-cart-button {
+    display: none;
+  } */
+  /* .category-apple-watch-bnt p {
+    display: block;
+  } */
+  .use-row {
+    gap: 10px;
+  }
+
+  .category-apple-watch-bnt-fix {
+    display: block;
+  }
+  .site {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  /* css lai cho header  */
+
+  nav .custom-icon-container {
+    display: none;
+  }
+  nav .menu {
+    display: none;
+  }
+  .menu-item {
+    flex-basis: 100%;
+  }
+  .search {
+    width: 80%;
+  }
+  .site-2 .search input {
+    width: 100%;
+  }
+
+  /* Đảm bảo logo và ô input search hiển thị trên hai hàng riêng biệt */
+  nav .site-2 {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+
+    /* cho vô giữa  */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* CSS cho logo */
+  .logo {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+  }
+
+  /* CSS cho ô input search */
+  .search {
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+  .banner {
+    border-top: 1px solid #e8e8e8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #fdf1f1;
+    padding-bottom: 50px;
+    border-radius: 0 0 10px 10px;
+  }
+  .banners .banner-title-2 {
+    flex-direction: column;
+  }
+  .banner .banners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 175px 0px 86px; */
+    padding-left: 0px;
+    width: 100%;
+    /* margin-right: 86px; */
+    gap: 20px;
+  }
+
+  .banner .site-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .site-3 .banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0;
+  }
+  .banners .banner-title {
+    display: none;
+  }
+  .banners .banner-desc {
+    display: none;
+  }
+  .banner-bnt {
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  /* css Fashion style  */
+  .fashion-style .category-name {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .fashion-style {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fashions {
+  }
+  .fashion-style .fashions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fashion-style .fashions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fashion-style .fashions .fashion-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .fashion-item-img {
+    max-width: fit-content;
+
+    object-fit: cover;
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+  }
+  .category-name::after {
+    text-align: center;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 82px;
+    width: 35%;
+    height: 1px;
+    background-color: black;
+  }
+  /* end fashition  */
+  .line {
+    width: 90%; /* Khi màn hình nhỏ hơn 768px, đặt độ rộng là 90% */
+  }
+
+  .left-line,
+  .right-line {
+    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
+  }
+  /* ẩn ddid 1 line  */
+  .left-line {
+    display: none;
+  }
+  .site-4 {
+    width: 68%;
+  }
+  /* css-product  */
+  .site-5 .products {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-5 .products .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .site-5 .products .product-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .site-5 {
+    width: 100%;
+  }
+  .category-apple-watch {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-item .product-item-img-1 {
+    max-width: fit-content;
+    height: 100%;
+    object-fit: cover;
+  }
+  .category-apple-watch .category-name {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .site-cover .line {
+    width: 90%; /* Khi màn hình nhỏ hơn 768px, đặt độ rộng là 90% */
+  }
+
+  .site-cover .left-line,
+  .right-line {
+    margin: 10px; /* Khi màn hình nhỏ hơn 768px, đặt khoảng cách là 10px */
+  }
+  /* ẩn ddid 1 line  */
+  .site-cover .left-line {
+    display: none;
+  }
+  .site-cover {
+    width: 68%;
+    margin: 0 auto;
+  }
+  /* footer  */
+
+  .footer {
+    padding-left: 20px;
+  }
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__col:first-child {
+    max-width: none;
+    margin-bottom: 24px;
+  }
+  .footer__col.more-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer_bottom > p {
+    padding-right: 0;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+  .footer_bottom-pay img {
+    width: 100%;
+  }
+  .coppyright {
+    margin-top: 20px;
+  }
+  .footer__col-desc {
+    display: none;
+  }
+  .footer .more-info > p {
+    text-align: center;
+  }
+  .menu-item-active {
+  }
+  .fashion-style .fashions {
+    padding-left: 0;
+  }
+  .fashion-style .category-name {
+    text-align: center;
+  }
+  .site-4 {
+    margin-top: 51px;
+    margin-bottom: 51px;
+    margin-left: 50px;
+  }
+  .category-apple-watch .category-name {
+    text-align: left;
+    width: 100%;
+    height: auto;
+  }
+  .fashion-style .category-name {
+    text-align: left;
+    width: 100%;
+    height: auto;
+  }
+  .site-5 .products {
+    padding-left: 0px;
+  }
+}
