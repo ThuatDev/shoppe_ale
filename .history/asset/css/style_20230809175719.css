@@ -15,6 +15,35 @@ body {
   --width-container: 1280px;
   --background: #fafafa;
 }
+   @media screen and (max-width: 768px)
+        {
+          main {
+            height: auto;
+          }
+         .footer {
+  overflow: hidden;
+}
+
+          .category_navbar{
+            height: auto;
+          }
+          .category {
+            height: auto;
+          }
+.btn_sortPage {
+
+
+          margin-left: 0;
+          text-align: center;
+          margin-bottom: 10px;
+
+
+}
+.category_navbar {
+  display: none;
+}
+        }
+
 
 header {
   /* fix cho nó giữ nguyên vị trí khi scroll */

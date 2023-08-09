@@ -15,7 +15,6 @@ body {
   --width-container: 1280px;
   --background: #fafafa;
 }
-
 header {
   /* fix cho nó giữ nguyên vị trí khi scroll */
   position: fixed;

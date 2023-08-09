@@ -572,5 +572,7 @@
   border: 1px solid #007bff; /* Change the active button border color as needed */
 }
 .footer {
-  margin-top: 0;
+  margin-top: 0px;
+}
+.category_end {
 }
